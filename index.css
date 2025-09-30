@@ -1,0 +1,727 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+   background: linear-gradient(to right, #60324a, #ad3a757d);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    padding: 0;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: .8em;
+}
+
+header a {
+  /* border: 3px solid red; */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+     opacity: 3;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+header a:hover{
+    color: white;
+}
+
+header p{
+color: white;
+    cursor: pointer;
+    margin: 0;
+     opacity: 3;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s ease-out forwards;    
+}
+
+
+header img{
+    width: 1.5%;
+    filter: brightness(0) invert(1);
+    opacity: 3;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+
+.tis-logo{
+     opacity: 3;
+  /* transform: translateX(-40px); */
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+nav{
+  background: linear-gradient(to right, #ffffff, #ad3a7543);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+    /* border: 3px solid red; */
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+     opacity: 0;
+        transform: translateY(10px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+    font-size: 15px;
+}
+
+ li a:hover{
+    color: rgb(30, 30, 30);
+}
+
+nav button{
+    padding: 13px 20px;
+    border: none;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .7px;
+}
+
+nav button a:hover{
+    color: white;
+}
+
+
+nav button:hover{
+    background-color: rgb(9, 9, 46);
+    color: white;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5em;
+    padding-top: 1em;
+}
+
+.hero-section {
+  position: relative;
+  /* other styles */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('All\ exco.PNG') center/cover no-repeat;
+  opacity: 0.1; /* adjust transparency */
+  pointer-events: none; /* allows clicks through overlay */
+  z-index: 1;
+}
+
+/* Make sure your hero content is positioned above the overlay if needed */
+.hero-section > *:not(.hero-overlay) {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text{
+    width: 90%;
+    padding: 0;
+}
+
+.hero-text h1{
+  /* border: 3px solid red; */
+    font-size: 57px;
+    font-weight: bold;
+     padding-left:  3em;
+         text-align: left;
+    margin-bottom: 20px;
+    width: 117%;
+     opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+
+.hero-text p{
+         width: 65%;
+           padding-left:  3.5em;
+         text-align: left;
+         color: rgb(86, 85, 85);
+         line-height: 25px;
+         opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+
+img.circle{
+     padding-right: 1em;
+   width: 400px;      /* or any equal value */
+  height: 400px;     /* or any equal value */
+  object-fit: cover; /* keeps the image aspect ratio */
+  border-radius: 50%;
+}
+
+.hero-image img{
+     margin-top: 2.4em;
+     opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+
+.hero-container-links{
+    display: flex;
+    gap: 1em;
+    text-align: left;
+    padding-left: 3.5em;
+     opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+
+.get-link-button {
+     padding: 13px 20px;
+    border: none;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+     opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+.get-link-button:hover{
+    background-color: rgb(10, 10, 52);
+}
+
+.get-link{
+     color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .7px;
+     opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+.get-link:hover{
+    color: white;
+}
+
+
+.hero-link{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .7px;
+     opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+.hero-link:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+.hero-link-button{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+     padding: 11px 20px;
+     cursor: pointer;
+     border-radius: 5px;
+      opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+.hero-link-button:hover{
+    background-color: rgb(243, 241, 241);
+    color: rgb(0, 0, 0);
+     opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+h2{
+    color: black;
+    /* border: 3px solid red; */
+    font-size: 50px;
+    text-align: center;
+     padding-top: 2em;
+        opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s ease-out forwards;
+}
+.unlock{
+    text-align: center;
+     color: rgb(86, 85, 85);
+        opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+   opacity: 0;
+        transform: translateY(40px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb; /* light gray */
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.10rem;
+  font-weight: 550;
+  color: #111827; /* dark gray/black */
+}
+
+.card-body p {
+  margin: 0;
+  color: #6b7584; /* gray text */
+  line-height: 1.9;
+  font-size: 0.85rem;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+.see-more-link{
+  border: 2px solid black;
+  background-color: white;
+  padding: 15px 1px;
+  width: 10%;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 7px;
+       opacity: 0;
+    transform: translateY(40px);
+    animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+.see-more-link a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .7px;
+    align-items: center;
+}
+.see-more-link:hover{
+    background-color: rgb(243, 241, 241);
+}
+
+
+.testi{
+  color: black;
+  /* font-size: 50px; */
+  font-weight: bolder;
+  font-size: 3rem;
+  font-family: sans-serif, "Poppins";
+  text-align: center;
+  padding-top: 1em;
+}
+.alumni{
+    color: rgb(95, 94, 94);
+    text-align: center;
+    /* margin-top: -3.5em; */
+    margin-bottom: 3em;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+
+
+
+
+/* testimonial slideshow */
+
+.testimonial-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9fafb;
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+    border-radius: 15px;
+  /* border: 2px solid black; */
+}
+
+/* Slides */
+.testimonial {
+  opacity: 0;
+  transform: translateX(40px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+    padding: 30px;
+  background: #fff;
+  /* border: 2px solid red; */
+  padding-right: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.testimonial.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative; /* keep current slide in flow */
+}
+
+/* Image + name row */
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 12px;
+}
+
+.testimonial-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  width: 90%;
+}
+
+/* Dots navigation */
+.dots {
+  margin-top: 15px;
+}
+
+.dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dots button.active {
+  background: #2563eb; /* blue */
+}
+
+
+.frequent{
+    color: black;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: sans-serif, "Poppins";
+  text-align: center;
+  margin-top: 1.8em;
+}
+.faq{
+   color: rgb(95, 94, 94);
+    text-align: center;
+    margin-bottom: 3em;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+
+.accordion{
+ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5em;  
+}
+.accordion-button {
+   border: 3px solid red;
+  line-height: 1.5;
+}
+
+.accordion-header{
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.start-investment{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: black;
+   padding-top: 1em;
+     padding-bottom: 4em;
+}
+.start-investment h6{
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+  padding-top: 1.3em;
+  text-align: center;
+}
+.investment-society{
+  color: rgba(169, 174, 245, 0.726);
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: .5px;
+}
+
+.start-investment button{
+  background-color: white;
+  padding: 10px 4px;
+  border: 2px solid black;
+  width: 15%;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: .7em auto;
+}
+
+.start-investment button a{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: .7px;
+}
+
+.footer{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 4em;
+  gap: 1em;
+}
+
+.footer p{
+   color: rgb(95, 94, 94);
+}
+
+.icons{
+  display: flex;
+  gap: .5em;
+}
+
+
+
+/* responsiveness */
+
+/* --- Responsive Styles --- */
+
+/* For tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+    padding: 1em 0.5em;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+  ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 1em;
+    padding-left: 0;
+  }
+  .hero-container {
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 1em;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    width: 100%;
+    padding-left: 0.5em;
+  }
+  .hero-text p {
+    width: 90%;
+    padding-left: 0.5em;
+    font-size: 1rem;
+  }
+  img.circle {
+    width: 250px;
+    height: 250px;
+    padding-right: 0;
+    margin: 0 auto;
+    display: block;
+  }
+  .hero-container-links {
+    flex-direction: column;
+    gap: 0.5em;
+    padding-left: 0;
+    align-items: center;
+  }
+  .cards-section {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  .accordion {
+    width: 90%;
+  }
+  .start-investment {
+    width: 98%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  .start-investment h6 {
+    font-size: 2rem;
+    padding-top: 1em;
+  }
+  .start-investment button {
+    width: 40%;
+    font-size: 1rem;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+    gap: 1em;
+    text-align: center;
+  }
+}
+
+/* For mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  header {
+    font-size: 11px;
+    padding: 0.7em 0.2em;
+  }
+  nav {
+    padding: 0 5px;
+  }
+  .hero-text h1 {
+    font-size: 1.3rem;
+    padding-left: 0.2em;
+  }
+  .hero-text p {
+    font-size: 0.95rem;
+    padding-left: 0.2em;
+  }
+  img.circle {
+    width: 140px;
+    height: 140px;
+  }
+  .cards-section {
+    gap: 0.7rem;
+    padding: 0 2px;
+  }
+  .card img {
+    height: 140px;
+  }
+  .testi, .frequent {
+    font-size: 1.5rem;
+    padding-top: 0.5em;
+    margin-top: 1em;
+  }
+  .alumni, .faq {
+    font-size: 0.95rem;
+    margin-bottom: 1.5em;
+  }
+  .accordion {
+    width: 98%;
+    margin-bottom: 2em;
+  }
+  .start-investment h6 {
+    font-size: 1.2rem;
+    padding-top: 0.7em;
+  }
+  .start-investment button {
+    width: 80%;
+    font-size: 0.95rem;
+  }
+  .footer {
+    padding: 1em 0.5em;
+    font-size: 0.95em;
+  }
+}
+
+/* For very small devices (min-width: 350px) */
+@media (min-width: 350px) {
+  header {
+    font-size: 12px;
+    padding: 1em 0.4em;
+  }
+  .hero-text h1 {
+    font-size: 1.1rem;
+  }
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+  .footer {
+    padding: 1.2em 0.7em;
+    font-size: 1em;
+  }
+}
