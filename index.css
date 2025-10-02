@@ -116,7 +116,7 @@ nav button:hover{
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 5em;
+    /* gap: 5em; */
     padding-top: 1em;
 }
 
@@ -147,9 +147,9 @@ nav button:hover{
 
 .hero-text h1{
   /* border: 3px solid red; */
-    font-size: 57px;
+    font-size:      30px;
     font-weight: bold;
-     padding-left:  3em;
+     padding-left:    1.9em;
          text-align: left;
     margin-bottom: 20px;
     width: 117%;
@@ -676,10 +676,10 @@ h2{
 
 
   img.circle {
+    /* border: 3px solid red; */
     width:        320px;
     height:         320px;
     padding-right: 0;
-    margin:     -3em;
   }
 
 
