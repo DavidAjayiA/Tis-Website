@@ -188,22 +188,45 @@ nav button:hover {
   gap: 30px;
   padding:5em;
 }
+.back {
+    border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* border: 3px solid black; */
+  /* padding: 20px; */
+  width:       80%;
+  margin-bottom: 1em;
+}
+.back img{
+      width: 100%;
+ border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: auto;
+}
+.back:hover{
+    transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+.back h3{
+    font-size: 1.3rem;
+    margin-top: 10px;
+  /* margin-bottom: 10px; */
+}
+.back p{
+    color: #4b5563;
+  font-size: 1rem;
+  margin: 5px 0;
+}
 
 .executive-card {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   /* border: 3px solid black; */
   /* padding: 20px; */
   width: 90%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-.executive-grid-two .executive-card    {     
- /* border: 2px solid red; */
- width: 70%;
-}
-
 .executive-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
@@ -223,6 +246,11 @@ nav button:hover {
   margin-bottom: 10px;
 }
 
+.executive-grid-two .executive-card    {     
+ border:  5px solid  green;
+ width: 70%;
+}
+
 .executive-card p {
   color: #4b5563;
   font-size: 1rem;
@@ -233,6 +261,51 @@ nav button:hover {
   font-weight: bold;
   color: #374151;
 }
+
+/* executive 2 */
+
+.back-executive-card{ 
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* border: 3px solid black; */
+  /* padding: 20px; */
+  width: 90%;
+}
+.back-executive-card:hover{ 
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.back-executive-card  img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* border-radius: 12px; */
+  margin-bottom: 20px;
+}
+
+.back-executive-card  h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.executive-grid-two .back-executive-card{ 
+ /* border: 2px solid red; */
+ width: 70%;
+}
+
+.executive-card p {
+  color: #4b5563;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+
+
+
 
 .linkedin {
   display: inline-block;
@@ -260,8 +333,6 @@ nav button:hover {
   }
 }
 
-
-
 .footer{
   background-color: #fff;
   display: flex;
@@ -277,4 +348,215 @@ nav button:hover {
 .icons{
   display: flex;
   gap: .5em;
+}
+
+
+
+
+
+
+
+
+
+/* --- Responsive Styles --- */
+
+/* For tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+  header {
+    display: flex;
+    text-align: center;
+    padding: 0 auto;
+  }
+  header img{
+    width:     5%;
+    margin-left:     6em;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+     width: 100%;
+     /* border: 3px solid red; */
+  }
+  ul a{
+    font-size:      12px;
+  }
+  nav img{
+     width: 50%;
+     /* border: 3px solid gray; */
+  }
+ nav button{ 
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+    padding-bottom:  0;
+    background: none;
+    width: 23%;
+    align-items: center;
+  }
+  nav button a{
+    font-size: 10px;
+    color: black;
+  }
+  .nav-links{
+    font-size: 15px;
+    padding:0 auto;
+    margin:0 auto;
+    margin-left:     -4.7em;
+   display: flex;
+   gap:      .7em;
+    justify-content: center;
+  }
+  ul {
+    width:   70%;
+    gap:     .3em;
+    padding-bottom:     1.2em;
+  }
+
+
+
+
+  /* card side */
+
+
+  .card-section {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  .card h2, p{ 
+    text-align: center;
+  }
+  .executive-grid {
+    grid-template-columns: 1fr;
+  }
+  .executive-grid-two {
+    flex-direction: column;
+    gap: 20px;
+    padding: 2em 0.5em;
+   /* border: 3px solid green; */
+  }
+.executive-card{
+  /* border: 3px solid red; */
+}
+.back-executive-card img{ 
+  /* border-radius: 10px;
+  border: 3px solid yellow; */
+    width: 100%;
+ border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: auto;
+}
+.back {
+    border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* border: 3px solid black; */
+  /* padding: 20px; */
+  width:        93%;
+  margin-bottom: 1em;
+}
+.back img{
+      width: 100%;
+ border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: auto;
+}
+
+
+ .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2em 1em;
+  }
+  .footer p{
+    width:               45vh;
+    font-size:        12px;
+    text-align: center;
+  }
+  .icons{
+    margin: 0 auto;
+    margin-top:         -1em;
+  }
+}
+
+/* For mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  header {
+    font-size: 11px;
+    padding: 0.7em 0.2em;
+  }
+  nav {
+    padding: 0 5px;
+  }
+  .card-section {
+    padding: 0 2px;
+    gap: 10px;
+  }
+  .card h2 {
+    font-size: 1.1rem;
+  }
+  .executives h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .executive-card h3 {
+    font-size: 1rem;
+  }
+  .executive-card p {
+    font-size: 0.95rem;
+  }
+  /* .footer {
+    padding: 1em 0.5em;
+    font-size: 0.95em;
+  } */
+}
+
+/* For very small devices (min-width: 350px) */
+@media (min-width: 350px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    padding: 1em 0.4em;
+    /* border: 3px solid red */
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    /* border: 3px solid rgb(125, 25, 134); */
+    /* font-size: 12px; */
+    /* padding: 1em 0.4em; */
+  }
+
+  ul{
+     display: flex;
+    flex-direction: row;
+    /* border: 3px solid rgb(134, 116, 25); */
+  }
+  
+  
+  .card-section {
+    padding: 0 6px;
+    gap: 12px;
+  }
+  .card h2 {
+    font-size: 1.2rem;
+  }
+  .executives h2 {
+    font-size: 1.3rem;
+  }
+  .executive-card h3 {
+    font-size: 1.05rem;
+  }
+  /* .footer {
+    padding: 1.2em 0.7em;
+    font-size: 1em;
+  } */
 }

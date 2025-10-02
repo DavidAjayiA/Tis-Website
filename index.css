@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
@@ -577,81 +578,187 @@ h2{
 
 /* For tablets (max-width: 991px) */
 @media (max-width: 991px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
   header {
-    flex-direction: column;
-    gap: 12px;
-    font-size: 12px;
-    padding: 1em 0.5em;
+    display: flex;
+    text-align: center;
+    padding: 0 auto;
+  }
+  header img{
+    width:     5%;
+    margin-left:     6em;
   }
   nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+     width: 100%;
+  }
+  ul a{
+    font-size: 10px;
+  }
+  nav img{
+     width: 50%;
+  }
+ nav button{ 
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+    padding-bottom:  0;
+    background: none;
+    width: 23%;
+    align-items: center;
+  }
+  nav button a{
+    font-size: 10px;
+    color: black;
+  }
+  .nav-links{
+    font-size: 15px;
+    padding:0 auto;
+    margin:0 auto;
+    margin-left:     -4.7em;
+   display: flex;
+   gap:      .7em;
+    justify-content: center;
   }
   ul {
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 1em;
-    padding-left: 0;
+    width:   70%;
+    gap:     .3em;
   }
+
+
+  
+  /* hero side */
+
   .hero-container {
+    display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding-top: 1em;
-    text-align: center;
   }
+
+.hero-text{
+  margin-top: 1em;
+}
+.hero-text p {
+  width:    100%;
+}
+
   .hero-text h1 {
-    font-size: 2rem;
-    width: 100%;
-    padding-left: 0.5em;
-  }
-  .hero-text p {
-    width: 90%;
-    padding-left: 0.5em;
-    font-size: 1rem;
-  }
-  img.circle {
-    width: 250px;
-    height: 250px;
-    padding-right: 0;
-    margin: 0 auto;
-    display: block;
+    font-size:   1.5em;
+    font-weight: bolder;
+    padding-right: 3px;
   }
   .hero-container-links {
-    flex-direction: column;
-    gap: 0.5em;
-    padding-left: 0;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  padding:     1em;
+  }
+  .hero-link-button{
+           padding:    .2em;
+               width: 100%;
+  }
+  .hero-link-button a{
+        font-size:     9px;
+        font-weight: bolder;
+  }
+  .get-link-button{
+       padding:    .4em;
+    width: 100%;
+  }
+  .get-link-button a{
+            font-size:      12px;
+  }
+
+
+  img.circle {
+    width:        320px;
+    height:         320px;
+    padding-right: 0;
+    margin:     -3em;
+  }
+
+
+  h2{
+    padding-top: 3em;
+  }
+  .unlock{
+        margin-top:     .6em;
+        width: 100%;
+        font-size:    12px;
+        font-weight:    500;
+        margin-bottom:      4em;
   }
   .cards-section {
     grid-template-columns: 1fr;
     gap: 1.2rem;
     padding: 0 0.5rem;
+    margin-top:     -.1px;
   }
+
+  .see-more-link{
+    width:     40%;
+    margin-bottom:      3em;
+  }
+
+  .testimonial-section{
+  margin-top:     -.3em;
+  }
+
+
+
+
   .accordion {
     width: 90%;
   }
+
   .start-investment {
     width: 98%;
+    margin-top:       5em;
     padding-top: 1em;
     padding-bottom: 2em;
   }
   .start-investment h6 {
-    font-size: 2rem;
-    padding-top: 1em;
+    font-size:       1.3rem;
+    width: 100%;
+    padding: 0;
+  }
+  .start-investment p{
+       font-size: 1rem;
+       margin-top: 1em;
   }
   .start-investment button {
     width: 40%;
     font-size: 1rem;
   }
   .footer {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     padding: 2em 1em;
-    gap: 1em;
+  }
+  .footer p{
+    width:               45vh;
+    font-size:        12px;
     text-align: center;
   }
+  .icons{
+    margin: 0 auto;
+    margin-top:         -1em;
+  }
 }
+
+
+
+
+
+
+
+
 
 /* For mobile (max-width: 600px) */
 @media (max-width: 600px) {
@@ -663,23 +770,11 @@ h2{
     padding: 0 5px;
   }
   .hero-text h1 {
-    font-size: 1.3rem;
     padding-left: 0.2em;
   }
   .hero-text p {
     font-size: 0.95rem;
     padding-left: 0.2em;
-  }
-  img.circle {
-    width: 140px;
-    height: 140px;
-  }
-  .cards-section {
-    gap: 0.7rem;
-    padding: 0 2px;
-  }
-  .card img {
-    height: 140px;
   }
   .testi, .frequent {
     font-size: 1.5rem;
@@ -694,34 +789,53 @@ h2{
     width: 98%;
     margin-bottom: 2em;
   }
-  .start-investment h6 {
+  /* .start-investment h6 {
     font-size: 1.2rem;
     padding-top: 0.7em;
-  }
+  } */
   .start-investment button {
     width: 80%;
     font-size: 0.95rem;
   }
-  .footer {
-    padding: 1em 0.5em;
-    font-size: 0.95em;
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* For very small devices (min-width: 350px) */
 @media (min-width: 350px) {
+    .nav-links li{
+      /* text-align: center; */
+      /* border:3px  solid rgb(69, 47, 51); */
+  }
   header {
     font-size: 12px;
     padding: 1em 0.4em;
   }
   .hero-text h1 {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
   }
   .hero-text p {
     font-size: 0.95rem;
   }
-  .footer {
+  /* .footer {
     padding: 1.2em 0.7em;
     font-size: 1em;
-  }
+  } */
 }
