@@ -653,6 +653,8 @@ h2{
 
 .hero-text{
   margin-top: 1em;
+  /* border: 3px solid green; */
+    width: 87%;
 }
 .hero-text p {
   width:    100%;
@@ -662,18 +664,21 @@ h2{
     font-size:   1.5em;
     font-weight: bolder;
     padding-right: 3px;
+    /* border: 3px solid red; */
   }
   .hero-container-links {
   display: flex;
   align-items: center;
-  padding:     1em;
+     padding-left: 0;
+  /* padding:     1em; */
+  /* border: 3px solid purple; */
   }
   .hero-link-button{
            padding:    .2em;
                width: 100%;
   }
   .hero-link-button a{
-        font-size:     9px;
+        font-size:     10px;
         font-weight: bolder;
   }
   .get-link-button{
@@ -776,7 +781,6 @@ h2{
     margin-top:         -1em;
   }
   .icons i{
-  /* border: 2px solid red; */
     font-size: 20px;
 }
 }
