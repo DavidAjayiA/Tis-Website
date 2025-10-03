@@ -484,6 +484,9 @@ nav button:hover {
     margin: 0 auto;
     margin-top:         -1em;
   }
+    .icons i{
+    font-size: 20px;
+}
 }
 
 /* For mobile (max-width: 600px) */
