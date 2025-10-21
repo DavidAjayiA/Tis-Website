@@ -115,6 +115,9 @@ nav button:hover{
     color: white;
 }
 
+
+
+
 .hero-container{
     display: flex;
     align-items: center;
@@ -576,7 +579,6 @@ h2{
   gap: .5em;
 }
 .icons i{
-  /* border: 2px solid red; */
     font-size: 20px;
 }
 
@@ -853,17 +855,12 @@ h2{
 
 /* For very small devices (min-width: 350px) */
 @media (min-width: 350px) {
-    .nav-links li{
-      /* text-align: center; */
-      /* border:3px  solid rgb(69, 47, 51); */
-  }
+
   header {
     font-size: 12px;
     padding: 1em 0.4em;
   }
-  .hero-text h1 {
-    /* font-size: 1.1rem; */
-  }
+ 
   .hero-text p {
     font-size: 0.95rem;
   }
