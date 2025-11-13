@@ -1,0 +1,412 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+header {
+   background: linear-gradient(to right, #60324a, #ad3a757d);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    padding: 0;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: .8em;
+}
+
+header a {
+  /* border: 3px solid red; */
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+     opacity: 3;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+header a:hover{
+    color: white;
+}
+
+header p{
+color: white;
+    cursor: pointer;
+    margin: 0;
+     opacity: 3;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s ease-out forwards;    
+}
+
+
+header img{
+    width: 1.5%;
+    filter: brightness(0) invert(1);
+    opacity: 3;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+
+.tis-logo{
+     opacity: 3;
+  /* transform: translateX(-40px); */
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+nav{
+  background: linear-gradient(to right, #ffffff, #ad3a7543);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+     opacity: 0;
+        transform: translateY(10px);
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+    font-size: 15px;
+}
+
+ li a:hover{
+    color: rgb(30, 30, 30);
+}
+
+nav button{
+    padding: 13px 20px;
+    border: none;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .7px;
+}
+
+nav button a:hover{
+    color: white;
+}
+
+
+nav button:hover{
+    background-color: rgb(9, 9, 46);
+    color: white;
+}
+
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 390px;
+    }
+
+    .swal2-popup {
+  border-radius: 15px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.swal2-title {
+  font-weight: 600 !important;
+}
+
+.swal2-confirm {
+  background-color: #60324a !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #ad3a75 !important;
+}
+
+
+    .form-container {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.form-container form h2{
+          color: #8F5B75;
+}
+
+    input, textarea, .button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+     .button {
+        background: #8F5B75;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    .button:hover {
+      background: #583345;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      height: 85vh;
+      background: linear-gradient(to right, #60324a, #ad3a757d),
+        url(phone-receiver.jpg)
+          center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      animation: fadeInDown 1.2s ease forwards;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #dbeafe;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    
+    /* === Footer === */
+.footer{
+  background: #8F5B75;
+  display: flex;
+  justify-content: center;
+  padding: 4em;
+  gap: 1em;
+}
+
+.footer p{
+   color: white;
+}
+
+.icons{
+  display: flex;
+  gap: .5em;
+}
+.icons i{
+    font-size: 20px;
+}
+
+    /* === Animations === */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+/* For tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+  header {
+    display: flex;
+    text-align: center;
+    padding: 0 auto;
+  }
+  header img{
+    width:     5%;
+    margin-left:     6em;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+     width: 100%;
+  }
+  ul a{
+    font-size: 10px;
+  }
+  nav img{
+     width: 50%;
+  }
+ nav button{ 
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+    padding-bottom:  0;
+    background: none;
+    width: 23%;
+    align-items: center;
+  }
+  nav button a{
+    font-size: 10px;
+    color: black;
+  }
+  .nav-links{
+    font-size: 15px;
+    padding:0 auto;
+    margin:0 auto;
+    margin-left:     -4.7em;
+   display: flex;
+   gap:      .7em;
+    justify-content: center;
+  }
+  ul {
+    width:   70%;
+    gap:     .3em;
+  }
+  .hero{
+      background: linear-gradient(to right, #60324a, #ad3a757d),
+        url(phone-receiver.jpg)
+          left/cover no-repeat;
+  }
+     .hero h1 {
+        font-size: 2.2rem;
+      } 
+        .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2em 1em;
+  }
+  .footer p{
+    width:               45vh;
+    font-size:        12px;
+    text-align: center;
+  }
+  .icons{
+    margin: 0 auto;
+    margin-top:         -1em;
+  }
+  .icons i{
+    font-size: 20px;
+}
+}
+
+ @media (max-width: 768px) {
+            .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2em 1em;
+  }
+  .footer p{
+    width:   45vh;
+    font-size:  12px;
+    text-align: center;
+  }
+  .icons{
+    margin: 0 auto;
+    margin-top:  -1em;
+  }
+  .icons i{
+    font-size: 20px;
+}
+  .hero{
+      background: linear-gradient(to right, #60324a, #ad3a757d),
+        url(phone-receiver.jpg)
+          left/cover no-repeat;
+  }
+ }
+
+
+
+/* For mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  header {
+    font-size: 11px;
+    padding: 0.7em 0.2em;
+  }
+  nav {
+    padding: 0 5px;
+  }
+    .hero{
+      background: linear-gradient(to right, #60324a, #ad3a757d),
+        url(phone-receiver.jpg)
+          left/cover no-repeat;
+  }
+}
+
+
+
+/* For very small devices (min-width: 350px) */
+@media (min-width: 350px) {
+  .hero{
+      background: linear-gradient(to right, #60324a, #ad3a757d),
+        url(phone-receiver.jpg)
+          left/cover no-repeat;
+  }
+  header {
+    font-size: 12px;
+    padding: 1em 0.4em;
+  }
+}
